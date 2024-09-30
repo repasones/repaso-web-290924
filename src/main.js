@@ -4,6 +4,7 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 import i18n from './i18n';
+import Card from 'primevue/card';
 
 const app = createApp(App);
 
@@ -19,5 +20,6 @@ app.use(PrimeVue, {
     }
 });
 
+app.component('pv-card', Card);
 
 app.mount('#app');
