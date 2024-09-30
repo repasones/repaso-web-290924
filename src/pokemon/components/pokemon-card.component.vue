@@ -19,40 +19,16 @@
 </template>
 
 <script>
-import { PokemonAPI } from '../services/pokemon-api.service';
 import { Pokemon } from '../model/pokemon.entity';
 
 export default {
     name: 'PokemonCard',
-    data() {
-        return {
-            api: new PokemonAPI(),
-            idPokemon: 50,
-            pokemon: null
+    props: {
+        pokemon: {
+            type: Pokemon,
+            required: true
         }
     },
-    /* async */
-    created() {
-        this.api.getPokemon(this.idPokemon).then(
-            response => {
-                const data = response.data;
-                //console.log(data);
-
-                this.pokemon = new Pokemon(data);
-            }
-        ).catch(e => alert("Error"));
-
-        /*  try {
-             const response = await this.api.getPokemon(this.idPokemon);
-             const data = response.data;
- 
-             console.log(response);
-             console.log(data);
-         }
-         catch (e) {
-             alert(e);
-         } */
-    }
 }
 </script>
 

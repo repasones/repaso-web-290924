@@ -1,15 +1,15 @@
 <script>
-import pokemonCardComponent from './pokemon/components/pokemon-card.component.vue';
+import pokemonListComponent from './pokemon/components/pokemon-list.component.vue';
 
 export default {
     components: {
-        pokemonCardComponent
+        pokemonListComponent
     }
 }
 </script>
 
 <template>
-    <pokemonCardComponent />
+    <pokemonListComponent />
 </template>
 
 <style scoped></style>
