@@ -5,11 +5,11 @@
             <img :src="pokemon.sprites.front_default" :alt="pokemon.name">
         </template>
         <template #title>
-            <h1>name: {{ pokemon.name }}</h1>
+            <h1>{{ $t("name") }}: {{ pokemon.name }}</h1>
         </template>
         <template #content>
             <h2>id: {{ pokemon.id }}</h2>
-            <p>types:</p>
+            <p>{{ $t("types") }}:</p>
 
             <div v-for="types in pokemon.types">
                 <p>{{ types.type.name }}</p>

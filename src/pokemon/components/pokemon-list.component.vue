@@ -1,5 +1,7 @@
 <template>
-    <pokemonCardComponent :pokemon="pokemones[0]" />
+    <div v-for="pokemon in pokemones">
+        <pokemonCardComponent :pokemon="pokemon" />
+    </div>
 </template>
 
 <script>
@@ -19,7 +21,6 @@ export default {
         };
     },
     created() {
-        //TODO
         this.api.getAllPokemon().then(
             response => {
                 const data = response.data;
@@ -27,12 +28,14 @@ export default {
 
                 const names = results.map(r => r.name)
 
-                this.pokemones = names.map(
-                    n => this.api.getPokemonByName(n)
-                        .then(poke => new Pokemon(poke))
-                        .catch(e => alert(e))
-                );
-                console.log(this.pokemones);
+                names.forEach(name => {
+                    this.api.getPokemonByName(name).then(response => {
+                        const data = response.data;
+                        const pokemon = new Pokemon(data);
+                        this.pokemones.push(pokemon);
+                    })
+                });
+
             }
         ).catch(e => alert("Error"));
 

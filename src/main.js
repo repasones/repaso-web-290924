@@ -5,6 +5,8 @@ import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 import i18n from './i18n';
 import Card from 'primevue/card';
+import Toolbar from 'primevue/toolbar';
+import Button from 'primevue/button';
 
 const app = createApp(App);
 
@@ -21,5 +23,7 @@ app.use(PrimeVue, {
 });
 
 app.component('pv-card', Card);
+app.component('pv-button', Button);
+app.component('pv-toolbar', Toolbar);
 
 app.mount('#app');
