@@ -7,10 +7,12 @@ import i18n from './i18n';
 import Card from 'primevue/card';
 import Toolbar from 'primevue/toolbar';
 import Button from 'primevue/button';
+import router from './routes/index'
 
 const app = createApp(App);
 
 app.use(i18n);
+app.use(router);
 app.use(PrimeVue, {
     theme: {
         preset: Aura,

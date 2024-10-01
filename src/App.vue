@@ -1,6 +1,6 @@
 <script>
 import pokemonListComponent from './pokemon/components/pokemon-list.component.vue';
-import toolbarComponent from './public/toolbar.component.vue'
+import toolbarComponent from './public/components/toolbar.component.vue'
 
 export default {
     components: {
@@ -12,7 +12,8 @@ export default {
 
 <template>
     <toolbarComponent />
-    <pokemonListComponent />
+    <router-view />
+    <!-- <pokemonListComponent /> -->
 </template>
 
 <style scoped></style>

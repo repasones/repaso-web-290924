@@ -1,0 +1,137 @@
+{
+  "nuevos": [
+    {
+      "id": 2,
+      "name": "B",
+      "sprites": {
+        "front_default": "img2"
+      },
+      "types": [
+        {
+          "type": {
+            "name": "grass"
+          }
+        },
+        {
+          "type": {
+            "name": "poison"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "1111",
+      "sprites": {
+        "front_default": "ee"
+      },
+      "types": [
+        {
+          "type": {
+            "name": "ww"
+          }
+        },
+        {
+          "type": {
+            "name": "qqq"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "NOMBRE",
+      "sprites": {
+        "front_default": ""
+      },
+      "types": [
+        {
+          "type": {
+            "name": "12321"
+          }
+        },
+        {
+          "type": {
+            "name": "32R2REW"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "111",
+      "sprites": {
+        "front_default": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl8ChEz5aiEtyp5HkGleh0-J3JH8tUGCF3Hw&s"
+      },
+      "types": [
+        {
+          "type": {
+            "name": "333"
+          }
+        },
+        {
+          "type": {
+            "name": "4444"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "www",
+      "sprites": {
+        "front_default": "ww"
+      },
+      "types": [
+        {
+          "type": {
+            "name": "ww"
+          }
+        },
+        {
+          "type": {
+            "name": "ww"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "qwe",
+      "sprites": {
+        "front_default": "qweqw"
+      },
+      "types": [
+        {
+          "type": {
+            "name": "qweqwe"
+          }
+        },
+        {
+          "type": {
+            "name": "qweqwe"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "123123",
+      "sprites": {
+        "front_default": "32423"
+      },
+      "types": [
+        {
+          "type": {
+            "name": "23423"
+          }
+        },
+        {
+          "type": {
+            "name": "53252"
+          }
+        }
+      ]
+    }
+  ]
+}
